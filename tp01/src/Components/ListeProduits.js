@@ -28,7 +28,8 @@ export class List extends Component {
     render() {
         return (
             <>
-            {this.state.produits.map((produit,i) => (<Produit produit={produit} key={i}></Produit>))}    
+            {this.state.produits.map((produit,i) => (<Produit produit={produit} key={i}></Produit>))}
+                
             </>
         )
 
