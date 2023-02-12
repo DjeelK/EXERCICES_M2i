@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Produit } from "./Produit";
 
 export class List extends Component {
   constructor(props) {
@@ -25,6 +26,11 @@ export class List extends Component {
     }
 
     render() {
+        return (
+            <>
+            {this.state.produits.map((produit,i) => (<Produit produit={produit} key={i}></Produit>))}    
+            </>
+        )
 
     }
 }
