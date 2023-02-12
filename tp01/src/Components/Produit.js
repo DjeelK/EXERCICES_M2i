@@ -3,22 +3,20 @@ import { List } from "./ListeProduits";
 
 export class Produit extends Component {
   constructor(props) {
-    super (props)
-    this.state = {
-                    produit: "NomProduit",
-                    description: "DescriptionProduit",
-                    prix: "PrixProduit",
+    super(props)
+    this.state = {}
     }
-  }
+  
   
   render () {
+    const {produit,description,prix} = this.props.produit
     return (
       <>
         <ul>
           <li>
-            <h3>{this.state.produit}</h3>
-            <h3>{this.state.description}</h3>
-            <h3>{this.state.prix}</h3>
+            <h4>Produit :{produit}</h4>
+            <h4>Description :{description}</h4>
+            <h4>Prix :{prix}</h4>
           </li>
         </ul>
       </>
