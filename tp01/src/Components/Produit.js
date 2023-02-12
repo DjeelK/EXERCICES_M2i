@@ -7,6 +7,12 @@ export class Produit extends Component {
     this.state = {}
     }
   
+  // addProduit = () => {
+  //     this.setState(state => ({
+  //       quantité: state.quantite + 1,
+  //       total: state.total + this.props.produit.prix
+  //     }));
+  //   };
   
   render () {
     const {produit,description,prix} = this.props.produit
