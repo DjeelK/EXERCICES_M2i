@@ -1,17 +1,15 @@
-import { Adresse } from "./adresse";
+import { Adresse } from "./Adresse";
 
-// Faire un composant qui client qui s'occupe que de l'affichage
-export function Client(props) {
-    // Utilisation du destructuring
-    const{firstName,lastName,phone,address,status} = props.client
+export function Client(props){
+
+    const {firstName,lastName,phone,status,address} =props.client
     return(
         <>
-            <div>{firstName}</div>
-            <div>{lastName}</div>
-            <div>{phone}</div>
-            <div>{status ? "client actif" : "client non actif"}</div>
-            <Adresse addressdemonclient={address}></Adresse>
+        <div>{firstName}</div>
+        <div>{lastName}</div>
+        <div>{phone}</div>
+        <div>{status ? "client actif" : "client non actif"}</div>
+        <Adresse adressedemonclient={address}></Adresse>
         </>
     )
-}
-
+} 

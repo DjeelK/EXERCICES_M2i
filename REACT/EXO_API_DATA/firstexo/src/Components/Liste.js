@@ -11,7 +11,7 @@ export class Liste extends Component {
     }
 
     componentDidMount(){
-        getInfoApi().then(res => {
+        getInfosClientsFromApi().then(res => {
            // console.log(res.data)
            this.setState({clients : [...res.data]})
         })
