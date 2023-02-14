@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { getInfosClientsFromApi } from "../services/data.service";
 import { Client } from "./Client";
+import { Formulaire } from "./formulaire";
 
 export class Liste extends Component {
     constructor(props){

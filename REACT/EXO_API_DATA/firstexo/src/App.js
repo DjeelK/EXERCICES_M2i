@@ -1,9 +1,9 @@
-import { DataComponent } from "./Components/dataComponent";
+import { Liste } from "./Components/Liste";
 
 function App() {
   return (
     <div className="App">
-      <DataComponent></DataComponent>
+      <Liste></Liste>
     </div>
   );
 }
