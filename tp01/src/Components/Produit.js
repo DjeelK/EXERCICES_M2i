@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { List } from "./ListeProduits";
+import { Magasin } from "./Magasin";
+import { Panier } from "./Panier";
+
 
 export class Produit extends Component {
   constructor(props) {
@@ -15,11 +17,12 @@ export class Produit extends Component {
   //   };
   
   render () {
-    const {produit,description,prix} = this.props.produit
+    const {id,produit,description,prix} = this.props.produit
     return (
       <div>
         <ul>
           <li>
+            <h4>id :{id}</h4>
             <h4>Produit :{produit}</h4>
             <h4>Description :{description}</h4>
             <h4>Prix :{prix}</h4>
