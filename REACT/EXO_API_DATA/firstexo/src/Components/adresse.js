@@ -1,13 +1,12 @@
-import { Component } from "react";
 
 export function Adresse(props) {
     // Utilisation du destructuring
-    const{ street,postCode,city} = props.address
+    const{ street,postCode,city} = props.addressdemonclient
     return (
         <>
-        <div>
-        Rue : {street}, Ville : {city}, Code Postal : {postCode}
-        </div>
+        <div>{city}</div>
+        <div>{postCode}</div>
+        <div>{street}</div>
         </>
     )
 };
