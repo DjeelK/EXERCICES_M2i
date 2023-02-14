@@ -1,8 +1,9 @@
+import { DataComponent } from "./Components/dataComponent";
 
 function App() {
   return (
     <div className="App">
-      <h1>Coucou</h1>
+      <DataComponent></DataComponent>
     </div>
   );
 }
